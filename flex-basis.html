@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+    Flex-basis -> Propriedade que estabelece o tamanho inicial do item antes das distribuições de espaço restante dentro dele, usando como base o conteúdo interno disposto.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <!--Externar parte de CSS -->
+    <style>
+        .flex-container {
+            max-width: 500px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .item {
+            background-color: chartreuse;
+            color: black;
+            text-align: center;
+            margin: 5px;
+        }
+        .fg-0 {
+            flex-grow: 0;
+        }
+        .fg-1 {
+            flex-grow: 1;
+        }
+        .fg-2 {
+            flex-grow: 2;
+        }
+        .fbasis {
+            flex-basis: auto;
+        }
+        .fbasis-0 {
+            flex-basis: 0;
+        }
+        .fbasis-100 {
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <P>Flex Grow-1</P>
+    <div class="flex-container">
+        <div class="item fg-1">AAA</div>
+        <div class="item fg-1">BBB</div>
+        <div class="item fg-1">CCC</div>
+        <div class="item fg-1">DDD</div>
+    </div>
+    <P>Flex Basis-auto</P>
+    <div class="flex-container">
+        <div class="item fbasis fg-2 ">AAA</div>
+        <div class="item fbasis fg-1 ">BBB</div>
+        <div class="item fbasis fg-1 ">CCC</div>
+        <div class="item fbasis fg-1 ">DDDDDD</div>
+    </div>
+    <P>Flex Basis-0</P>
+    <div class="flex-container">
+        <div class="item fbasis-0 fg-1 ">AAA</div>
+        <div class="item fbasis-0 fg-2 ">BBB</div>
+        <div class="item fbasis-0 fg-2 ">CCC</div>
+        <div class="item fbasis-0 fg-2 ">DDD</div>
+    </div>
+    <P>Flex Basis + width</P>
+    <div class="flex-container">
+        <div class="item fbasis-100 fg-2">AAA</div>
+        <div class="item fbasis-100 fg-2">BBB</div>
+        <div class="item fbasis-100 fg-2">CCC</div>
+        <div class="item fbasis-100 fg-2">DDD</div>
+    </div>
+</body>
+</html>

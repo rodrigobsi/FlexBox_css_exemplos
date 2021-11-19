@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Align-content -> Propriedade responsável por tratar o alinhamento das linhas do container em relação ao eixo vertical do container.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content</title>
+    <style>
+        .container {
+            height: 500;
+            max-width: 300;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item {
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">DF.Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar o exemplo.</div>
+        <div class="item">Ordem e Progresso! Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">DF. Mais texto</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar o exemplo.</div>
+    </div>
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">DF.Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar o exemplo.</div>
+        <div class="item">Ordem e Progresso! Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">DF. Mais texto</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar o exemplo.</div>
+    </div>
+    <p>Flex-Start</p>
+    <div class="container flex-start">
+        <div class="item">DF.Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar.</div>
+        <div class="item">Ordem e Progresso! Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">DF. Mais texto</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar o exemplo.</div>
+    </div>
+    <p>Flex-end</p>
+    <div class="container flex-end">
+        <div class="item">DF.Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar.</div>
+        <div class="item">Ordem e Progresso! Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">DF. Mais texto</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar o exemplo.</div>
+    </div>
+    <p>Space-Around</p>
+    <div class="container space-around">
+        <div class="item">DF.Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar.</div>
+        <div class="item">Ordem e Progresso! Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">DF. Mais texto</div>
+      
+    </div>
+    <p>Space-Between</p>
+    <div class="container space-between">
+        <div class="item">DF.Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns! Mais texto para melhorar.</div>
+        <div class="item">Ordem e Progresso! Mais texto</div>
+        <div class="item">item 2. Mais texto</div>
+        <div class="item">DF. Mais texto</div>
+   
+    </div>
+</body>
+</html>

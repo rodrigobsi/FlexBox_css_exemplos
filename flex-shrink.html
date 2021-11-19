@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - Shrink</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            max-width: 400px;
+        }
+
+        .flex-item {
+            background-color: chocolate;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .fs-1 {
+            flex-shrink: 1;
+        }
+
+        .fs-0 {
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+
+        .fs-2 {
+            flex-shrink: 2;
+            flex-basis: 200px;
+        }
+
+        .fs-3 {
+            flex-shrink: 3;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flex-shrink -> Propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item;-->
+    <p>Flex-Shrink 1</p>
+    <div class="flex-container">
+        <div class="flex-item fg-1 fs-1">A</div>
+        <div class="flex-item fg-1 fs-1">B</div>
+        <div class="flex-item fg-1 fs-1">C</div>
+        <div class="flex-item fg-1 fs-1">D</div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item fg-1 fs-1">A</div>
+        <div class="flex-item fg-1 fs-1">BB Frase maior</div>
+        <div class="flex-item fg-1 fs-1">C</div>
+        <div class="flex-item fg-1 fs-1">D</div>
+    </div>
+
+    <p>Flex-Shrink 0 / Basis 100px</p>
+    <div class="flex-container">
+        <div class="flex-item fg-1 fs-0">A</div>
+        <div class="flex-item fg-1 fs-0">B Frase maior</div>
+        <div class="flex-item fg-1 fs-0">C</div>
+        <div class="flex-item fg-1 fs-0">D</div>
+    </div>
+
+    <p>Flex-Shrink 1,2,3</p>
+    <div class="flex-container">
+        <div class="flex-item fg-1 fs-1">A</div>
+        <div class="flex-item fg-1 fs-1">B Frase maior</div>
+        <div class="flex-item fg-1 fs-2">A</div>
+        <div class="flex-item fg-1 fs-2">B Frase maior</div>
+        <div class="flex-item fg-1 fs-3">A</div>
+        <div class="flex-item fg-1 fs-3">B Frase maior</div>
+        <div class="flex-item fg-1 fs-0">A</div>
+        <div class="flex-item fg-1 fs-2">A</div>
+        <div class="flex-item fg-1 fs-3">A</div>
+   
+    </div>
+</body>
+
+</html>

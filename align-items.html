@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <!--Externar parte de CSS -->
+    <style>
+        .container {
+            max-width: 350;
+            width: 400px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: coral;
+            margin: 5px;
+            color: black;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .start {
+            align-items: flex-start;
+        }
+
+        .end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .central {
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Center</p>
+    <section class="container center flex">
+        <div class="item">item 1</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">item 3</div>
+        <div class="item">Distrito Federal</div>
+    </section>
+    <p></p>
+    <nav class="container center">
+        <ul>
+            <li><a href="#">Página inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <p>Stretch</p>
+    <section class="container stretch">
+        <div class="item">DF</div>
+        <div class="item">item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Flex-Start</p>
+    <section class="container start">
+        <div class="item">DF</div>
+        <div class="item">item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Flex-End</p>
+    <section class="container end">
+        <div class="item">DF</div>
+        <div class="item">item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Baseline</p>
+    <section class="container baseline">
+        <div class="item">DF</div>
+        <div class="item"><br>Item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Column</p>
+    <p>Center</p>
+    <section class="container center flex column">
+        <div class="item">item 1</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">item 3</div>
+        <div class="item">Distrito Federal</div>
+    </section>
+    <p></p>
+    <nav class="container center column">
+        <ul>
+            <li><a href="#">Página inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <p>Stretch</p>
+    <section class="container stretch column">
+        <div class="item">DF</div>
+        <div class="item">item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Flex-Start</p>
+    <section class="container start column">
+        <div class="item">DF</div>
+        <div class="item">item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Flex-End</p>
+    <section class="container end column">
+        <div class="item">DF</div>
+        <div class="item">item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Baseline</p>
+    <section class="container baseline column">
+        <div class="item">DF</div>
+        <div class="item"><br>Item 2</div>
+        <div class="item">Ordem e Progresso!</div>
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+    <p>Alinhamento Central à tela</p>
+    <section class="container center central">
+        <div class="item">Brasil. Nação linda e rica. Prabéns</div>
+    </section>
+</body>
+
+</html>

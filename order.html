@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <!--Externar CSS - Boa Prática.-->
+    <style>
+        .flex-container {
+            display: flex;
+            max-width: 350px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .item {
+            flex: 2;
+            background-color: cornflowerblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+        /*Oredena os elementos de acordo com a classe criada. Ex: 1,2,3....*/
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+        /*Mudando o sentindo dos elementos para vertical(Colunas-Column).*/
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Row</h1>
+    <div class="flex-container">
+        <div class="item order-3">AA</div>
+        <div class="item order-2">BBB</div>
+        <div class="item order-2">CC</div>
+        <div class="item order-1">DDDD</div>
+    </div>
+    <h1>Column</h1>
+    <div class="flex-container direction">
+        <div class="item order-3">AA</div>
+        <div class="item order-2">BBB</div>
+        <div class="item order-2">CC</div>
+        <div class="item order-1">DDDD</div>
+    </div>
+</body>
+
+</html>
